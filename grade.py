@@ -3,7 +3,7 @@ st.title("Grade calculator")
 name=st.text_input("Enter your name")
 index=st.text_input("Enter your index number")
 Course_name=st.selectbox("Enter Course name:",["Biology","Chmistry","Maths","English","Physics",])
-course_mark=st.number_input("Enter your course mark")
+course_mark=st.number_input("Enter your course mark(0-100)", min_value=0,max_value=100)
 if st. button("Calculate grade"):
 	
 	course_mark= int(course_mark)/int(140)*100
@@ -19,6 +19,7 @@ if st. button("Calculate grade"):
 	   st. success("Fail")
 course_name=course_mark
 print(course_mark)
+
 
 
 
