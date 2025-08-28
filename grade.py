@@ -7,18 +7,19 @@ course_mark=st.number_input("Enter your course mark(0-100)", min_value=0,max_val
 if st. button("Calculate grade"):
 	
 	course_mark= int(course_mark)/int(140)*100
-	if course_mark <= 80:
+	if course_mark >= 80:
 	 	st.success("Grade A")
-	elif course_mark <= 70:
+	elif course_mark >= 70:
 	 	st.success("Grade B")
-	elif course_mark <= 60:
+	elif course_mark >= 60:
 	 	st.success("Grade C")
-	elif course_mark <= 50:
+	elif course_mark >= 50:
 		st.success("Grade D")
 	elif course_mark < 50:
 	   st. success("Fail")
 course_name=course_mark
 print(course_mark)
+
 
 
 
